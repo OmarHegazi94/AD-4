@@ -1,0 +1,167 @@
+<ng-container>
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav [mode]="isLargeScreen() ? 'side' : 'over'" [opened]="isLargeScreen()" class="sidenav" [fixedInViewport]="options.value.fixed">
+
+      <mat-toolbar class="header">
+        <img src="../../../assets/images/avatar.jpg" alt="user image" class="avatar">
+        <h4>John Snow</h4>
+        <h6>The king in the North</h6>
+        <p>id: 25163128</p>
+      </mat-toolbar>
+
+      <div class="container">
+
+        <!-- DASHBOARD -->
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <mat-icon>equalizer</mat-icon>
+                Dashboard
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <button mat-button>
+              <span>O</span>
+              Overview
+            </button>
+            <button mat-button>
+              <span>S</span>
+              Stats
+            </button>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+        <!-- COMPONENTS -->
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <mat-icon>widgets</mat-icon>
+                Components
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <button mat-button>
+              <span>B</span>
+              Buttons
+            </button>
+            <button mat-button>
+              <span>P</span>
+              Panels
+            </button>
+            <button mat-button>
+              <span>N</span>
+              Notifications
+            </button>
+            <button mat-button>
+              <span>I</span>
+              Icons
+            </button>
+            <button mat-button>
+              <span>T</span>
+              Typogrphy
+            </button>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+        <!-- FORMS -->
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <mat-icon>date_range</mat-icon>
+                Forms
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <button mat-button>
+              <span>RF</span>
+              Regular Forms
+            </button>
+            <button mat-button>
+              <span>VF</span>
+              Validation Forms
+            </button>
+            <button mat-button>
+              <span>W</span>
+              Wizard
+            </button>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+        <!-- TABLES -->
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <mat-icon>storage</mat-icon>
+                Tables
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <button mat-button>
+              <span>RT</span>
+              Regular Tables
+            </button>
+            <button mat-button>
+              <span>DT</span>
+              Data Tables
+            </button>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+        <!-- MAPS -->
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <mat-icon>map</mat-icon>
+                MAPS
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <button mat-button>
+              <span>GM</span>
+              Google Maps
+            </button>
+            <button mat-button>
+              <span>FSM</span>
+              Full Screen Map
+            </button>
+          </mat-expansion-panel>
+        </mat-accordion>
+        <!-- CHARTS -->
+
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <mat-icon>map</mat-icon>
+                Widgets
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <button mat-button>
+              <mat-icon>timeline</mat-icon>
+              CHARTS
+            </button>
+            <button mat-button>
+              <mat-icon>date_range</mat-icon>
+              Calender
+            </button>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+        <button mat-button class="sign-out">
+          <mat-icon>subdirectory_arrow_left</mat-icon>
+          Sign Out
+        </button>
+
+
+      </div>
+      <!-- End container !-->
+
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <button mat-button (click)="sidenav.toggle()">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
+</ng-container>

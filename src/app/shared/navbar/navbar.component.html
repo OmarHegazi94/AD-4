@@ -1,0 +1,51 @@
+<mat-toolbar class="navbar">
+  <mat-toolbar-row>
+    <span>
+      <img src="../../../assets/images/logo3.png" alt="logo image" class="logo">
+    </span>
+
+    <span class="example-spacer"></span>
+
+    <div class="wrapper">
+
+      <form class="form">
+        <mat-form-field>
+          <input type="text" matInput placeholder="Search">
+          <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+      </form>
+
+
+      <button mat-button>
+        <mat-icon>assignment</mat-icon>
+      </button>
+
+      <button mat-button [matMenuTriggerFor]="menu">
+        <mat-icon>notifications</mat-icon>
+        <span> 3</span>
+      </button>
+
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>dialpad</mat-icon>
+          <span>notification 1</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>voicemail</mat-icon>
+          <span>notification 2</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>notifications_off</mat-icon>
+          <span>notification 3</span>
+        </button>
+      </mat-menu>
+
+      <button mat-button>
+        <mat-icon>settings</mat-icon>
+      </button>
+
+    </div>
+    <!-- END WRAPPER ! -->
+  </mat-toolbar-row>
+
+</mat-toolbar>
